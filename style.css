@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #2F2E41;
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    width: 59px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    transform: scale(1.2);
+}
+
+
+
+.inner-header {
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.navigation {
+    height: 100%;
+    width: auto;
+    float: right;
+}
+
+.navigation a {
+    height: 100%;
+    display: inline-block;
+    padding: 40px 40px;
+    border-radius: 10px;
+}
+
+.navigation a li {
+    display: table-cell;
+    height: 100%;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 27px;
+    transition: 0.2s ease;
+
+}
+
+.navigation a:last-child {
+    padding-right: 0;
+}
+
+/* .navigation a:hover {
+    background-color: #63BCE5;
+} */
+
+.navigation a li:hover {
+    color: #63BCE5;
+}
+
+
+
+.background {
+    height: 80vh;
+    float: right;
+    margin-top: 10vh;
+}
+
+#floating-squares {
+    animation: squares 10s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes squares {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+.introduction {
+    margin-left: 10%;
+    padding-top: 40vh;
+    position: absolute;
+}
+
+.text1 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #D1D1D1;
+}
+
+.text2 {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+
+.text3 {
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: 10;
+    font-size: 48px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+button {
+    margin-top: 50px;
+    width: 146px;
+    height: 46px;
+    background-color: #2F2E41;
+    border: 2px solid #BF5454;
+    box-sizing: border-box;
+    border-radius: 9px;
+    color: white;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #BF5454;
+    transition: 0.2s;
+}
+
+
+
+@media (max-width: 1536px) {
+    .inner-header {
+        width: 90%;
+    }
+
+    .introduction {
+        margin-left: 5%;
+    }
+
+    .text1 {
+        font-size: 24px;
+
+    }
+    
+    .text2 {
+        font-size: 64px;
+    }
+    
+    .text3 {
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .background {
+        transform: scale(0.8);
+        margin-right: -10%;
+    }
+
+    #floating-squares {
+        display: none;
+    }
+
+   
+
+
+
+}
