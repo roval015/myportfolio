@@ -81,6 +81,8 @@ body {
     height: 80vh;
     float: right;
     margin-top: 10vh;
+    transform: scale(1.2);
+    margin-right: 50px;
 }
 
 #floating-squares {
@@ -148,6 +150,10 @@ button:hover {
 
 
 @media (max-width: 1536px) {
+    .background {
+        transform: scale(1);
+        margin-right: 0;
+    }
     .inner-header {
         width: 90%;
     }
