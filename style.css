@@ -219,13 +219,13 @@ button:hover {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
 
     
     
     .background {
         transform: scale(0.7);
-        margin-top: 42vh;
+        margin-top: 55%;
         position: fixed;
         float: right;
         margin-right: -300px;
